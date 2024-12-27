@@ -12,6 +12,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        helvetica: [`var(--font-helvetica)`],
+        "birds-of-paradise": [`var(--font-birds-of-paradise)`],
+        "bright-larch": [`var(--font-bright-larch)`],
+        amarillo: [`var(--font-amarillo)`],
+      },
     },
   },
   plugins: [],
