@@ -62,7 +62,7 @@ export const Hero = () => {
       </div>
 
       <Image
-        src="/imgs/flores_esquina_izquierda.png"
+        src="/imgs/flowers.png"
         alt="Cesar & Veronica"
         width={150}
         height={150}
