@@ -10,7 +10,7 @@ export const Hero = () => {
       <div
         className="max-w-7xl  mx-auto flex items-center flex-col justify-center h-full space-y-4"
         style={{
-          backgroundImage: "url('/imgs/fondo.png')",
+          backgroundImage: "url('/imgs/hero1.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -29,7 +29,7 @@ export const Hero = () => {
                     }deg)`,
                     transformOrigin: "0 200px",
                   }}
-                  className="font-helvetica text-sm sm:text-base lg:text-lg bg-white  px-0.5 text-tertiary"
+                  className="font-helvetica text-sm sm:text-base lg:text-lg   px-0.5 text-tertiary"
                 >
                   {char}
                 </span>
@@ -40,10 +40,10 @@ export const Hero = () => {
         <div className="flex justify-center flex-col items-center">
           <Fade direction="up" triggerOnce>
             <Image
-              src="/imgs/hero.jpg"
+              src="/imgs/hero2.jpg"
               alt="Cesar & Veronica"
               className="rounded-t-full z-10 border-[10px] border-[#f0eae0]"
-              width={400}
+              width={330}
               height={150}
               sizes="(max-width: 768px) 200px, 320px"
             />
@@ -59,9 +59,10 @@ export const Hero = () => {
           </h1>
         </Fade>
 
-        <p className="text-xl lg:text-2xl text-tertiary py-2 font-helvetica rounded-2xl">
+        <p className="text-xl text-center lg:text-2xl text-tertiary py-2 font-helvetica rounded-2xl">
           ENE |<span className="text-4xl lg:text-5xl font-bold"> 18 </span> |
-          <span className=""> 2025</span>
+          <span className=""> 2025</span> <br />
+          <span className="text-2xl lg:text-3xl">4:30 PM</span>
         </p>
       </div>
     </div>

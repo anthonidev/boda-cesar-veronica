@@ -12,32 +12,17 @@ const bentoItems = [
     src: "/imgs/1.jpg",
     alt: "boda 1",
     title: "Boda 1",
-    width: 2,
-    height: 2,
+    width: 4,
+    height: 3,
   },
-  {
-    id: 2,
-    src: "/imgs/19.jpg",
-    alt: "boda 2",
-    title: "Boda 2",
-    width: 2,
-    height: 2,
-  },
-  {
-    id: 3,
-    src: "/imgs/23.jpg",
-    alt: "boda 3",
-    title: "Boda 3",
-    width: 2,
-    height: 1,
-  },
+
   {
     id: 4,
     src: "/imgs/3.jpg",
     alt: "boda 4",
     title: "Boda 4",
     width: 2,
-    height: 2,
+    height: 4,
   },
   {
     id: 5,
@@ -61,7 +46,7 @@ const bentoItems = [
     alt: "boda 7",
     title: "Boda 7",
     width: 2,
-    height: 2,
+    height: 3,
   },
   {
     id: 8,
@@ -70,14 +55,6 @@ const bentoItems = [
     title: "Boda 8",
     width: 2,
     height: 3,
-  },
-  {
-    id: 9,
-    src: "/imgs/6.jpg",
-    alt: "boda 9",
-    title: "Boda 9",
-    width: 2,
-    height: 2,
   },
 ];
 
