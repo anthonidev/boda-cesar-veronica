@@ -61,8 +61,10 @@ export default function RootLayout({
           name="twitter:description"
           content="Te invitamos a nuestra boda el 18 de enero de 2025 a las 4:30 pm en la Casa Pretelli - Lurín, te esperamos."
         />
-        {/* URL relativa para la imagen en la carpeta public */}
-        <meta name="twitter:image" content="/imgs/hero2.webp" />
+        <meta
+          name="twitter:image"
+          content="https://boda-cesar-veronica.vercel.app/imgs/hero2.webp"
+        />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <body
