@@ -10,7 +10,7 @@ export const Hero = () => {
       <div
         className="max-w-7xl  mx-auto flex items-center flex-col justify-center h-full space-y-4"
         style={{
-          backgroundImage: "url('/imgs/hero1.png')",
+          backgroundImage: "url('/imgs/hero1.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -40,7 +40,7 @@ export const Hero = () => {
         <div className="flex justify-center flex-col items-center">
           <Fade direction="up" triggerOnce>
             <Image
-              src="/imgs/hero2.jpg"
+              src="/imgs/hero2.webp"
               alt="Cesar & Veronica"
               className="rounded-t-full z-10 border-[10px] border-[#f0eae0]"
               width={330}

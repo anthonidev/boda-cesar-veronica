@@ -1,5 +1,6 @@
 import Artistas from "@/components/Artistas";
 import BackgroundMusic from "@/components/BackgroundMusic";
+import Footer from "@/components/Footer";
 import Galeria from "@/components/Galeria";
 import { Hero } from "@/components/Hero";
 import Location from "@/components/Location";
@@ -18,6 +19,7 @@ export default function Home() {
       <Vestimenta />
       <Artistas />
       <Galeria />
+      <Footer />
     </main>
   );
 }

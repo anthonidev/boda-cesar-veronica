@@ -8,7 +8,7 @@ const Vestimenta = () => {
     <div
       className=" py-32 px-5 text-center  border-b-8 border-tertiary"
       style={{
-        backgroundImage: "url('/imgs/fondo.png')",
+        backgroundImage: "url('/imgs/fondo.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

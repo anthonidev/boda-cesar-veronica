@@ -9,7 +9,7 @@ import CardGaleria from "./common/CardGaleria";
 const bentoItems = [
   {
     id: 1,
-    src: "/imgs/1.jpg",
+    src: "/imgs/1.webp",
     alt: "boda 1",
     title: "Boda 1",
     width: 4,
@@ -18,7 +18,7 @@ const bentoItems = [
 
   {
     id: 4,
-    src: "/imgs/3.jpg",
+    src: "/imgs/3.webp",
     alt: "boda 4",
     title: "Boda 4",
     width: 2,
@@ -26,7 +26,7 @@ const bentoItems = [
   },
   {
     id: 5,
-    src: "/imgs/2.jpg",
+    src: "/imgs/2.webp",
     alt: "boda 5",
     title: "Boda 5",
     width: 2,
@@ -34,7 +34,7 @@ const bentoItems = [
   },
   {
     id: 6,
-    src: "/imgs/8.jpg",
+    src: "/imgs/8.webp",
     alt: "boda 6",
     title: "Boda 6",
     width: 2,
@@ -42,7 +42,7 @@ const bentoItems = [
   },
   {
     id: 7,
-    src: "/imgs/7.jpg",
+    src: "/imgs/7.webp",
     alt: "boda 7",
     title: "Boda 7",
     width: 2,
@@ -50,7 +50,7 @@ const bentoItems = [
   },
   {
     id: 8,
-    src: "/imgs/5.jpg",
+    src: "/imgs/5.webp",
     alt: "boda 8",
     title: "Boda 8",
     width: 2,

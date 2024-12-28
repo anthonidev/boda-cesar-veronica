@@ -4,11 +4,11 @@ import { Fade, Zoom } from "react-awesome-reveal";
 
 const People = () => {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary  border-b-8 border-tertiary">
       <div
-        className=" py-20 max-w-7xl mx-auto px-5 text-center"
+        className=" py-40 lg:py-20 max-w-7xl mx-auto px-5 text-center"
         style={{
-          backgroundImage: "url('/imgs/fondo4.jpeg')",
+          backgroundImage: "url('/imgs/option5.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -40,6 +40,20 @@ const People = () => {
           </Fade>
           <Fade direction="right" delay={200} triggerOnce>
             <h2 className="text-4xl font-birds-of-paradise tracking-wider text-gris mt-5 ">
+              Padrinos
+            </h2>
+
+            <div className="mt-5 text-[#545454] italic">
+              <div className="mb-10">
+                <Zoom delay={300} cascade damping={0.2}>
+                  <p className=" mt-2  ">Jacqueline Fiorella Gamboa Rivera</p>
+                  <p className="capitalize">Benji Ali Llanos Quispe</p>
+                </Zoom>
+              </div>
+            </div>
+          </Fade>
+          <Fade direction="right" delay={200} triggerOnce>
+            <h2 className="text-4xl font-birds-of-paradise tracking-wider text-gris mt-5 ">
               Testigos
             </h2>
 
@@ -47,7 +61,7 @@ const People = () => {
               <div className="mb-10">
                 <Zoom delay={300} cascade damping={0.2}>
                   <p className=" mt-2 ">Hermogenes García Hurtado</p>
-                  <p className="">Virginia Yrauda Salinas Rodriguez</p>
+                  <p className="">Virginia Yraida Salinas Rodriguez</p>
                 </Zoom>
               </div>
             </div>
