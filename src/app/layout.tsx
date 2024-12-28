@@ -46,7 +46,10 @@ export default function RootLayout({
           property="og:description"
           content="Te invitamos a nuestra boda el 18 de enero de 2025 a las 4:30 pm en la Casa Pretelli - Lurín, te esperamos."
         />
-        <meta property="og:image" content="/imgs/hero2.webp" />
+        <meta
+          property="og:image"
+          content="https://boda-cesar-veronica.vercel.app/imgs/hero2.webp"
+        />
         <meta
           property="og:url"
           content="https://boda-cesar-veronica.vercel.app"
