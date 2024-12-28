@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 
 export const Hero = () => {
-  const text = " ¡NOS CASAMOS!";
+  const text = "¡NOS CASAMOS!";
 
   return (
     <div className="bg-primary h-screen min-h-screen ">
@@ -29,7 +29,7 @@ export const Hero = () => {
                     }deg)`,
                     transformOrigin: "0 200px",
                   }}
-                  className="font-helvetica text-sm sm:text-base lg:text-lg text-tertiary"
+                  className="font-helvetica text-sm sm:text-base lg:text-lg bg-white  px-0.5 text-tertiary"
                 >
                   {char}
                 </span>
