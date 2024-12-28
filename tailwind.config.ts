@@ -11,6 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        tertiary: "var(--tertiary)",
+        gris: "var(--gris)",
       },
       fontFamily: {
         helvetica: [`var(--font-helvetica)`],
