@@ -6,7 +6,7 @@ import { Fade, Zoom } from "react-awesome-reveal";
 const Vestimenta = () => {
   return (
     <div
-      className=" py-32 px-5 text-center  border-b-8 border-tertiary"
+      className=" py-32 px-5 text-center bg-primary  border-b-8 border-tertiary"
       style={{
         backgroundImage: "url('/imgs/unique.webp')",
 
