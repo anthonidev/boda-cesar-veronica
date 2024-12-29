@@ -13,7 +13,6 @@ const Vestimenta = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        backgroundBlendMode: "overlay",
       }}
     >
       <div className="flex justify-center mb-8">
