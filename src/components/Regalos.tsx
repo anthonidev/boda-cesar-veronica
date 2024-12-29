@@ -8,7 +8,7 @@ const Regalos = () => {
     <div
       className="bg-primary py-20 px-5 text-center border-b-8 border-tertiary"
       style={{
-        backgroundImage: "url('/imgs/hero1.webp')",
+        backgroundImage: "url('/imgs/unique.webp')",
 
         backgroundSize: "cover",
         backgroundPosition: "center",

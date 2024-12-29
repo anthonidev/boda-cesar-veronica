@@ -10,7 +10,7 @@ export const Hero = () => {
       <div
         className="max-w-7xl  mx-auto flex items-center flex-col justify-center h-full space-y-4"
         style={{
-          backgroundImage: "url('/imgs/hero1.webp')",
+          backgroundImage: "url('/imgs/unique.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
