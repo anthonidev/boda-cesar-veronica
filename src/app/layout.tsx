@@ -48,10 +48,10 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://boda-cesar-veronica.vercel.app/imgs/hero2.jpg"
+          content="https://boda-cesar-veronica.vercel.app/imgs/miniatura.jpg"
         />
         <meta property="og:image:width" content="500" />
-        <meta property="og:image:height" content="554" />
+        <meta property="og:image:height" content="272" />
         <meta property="og:image:alt" content="Cesar & Veronica" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta
@@ -67,7 +67,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://boda-cesar-veronica.vercel.app/imgs/hero2.jpg"
+          content="https://boda-cesar-veronica.vercel.app/imgs/miniatura.jpg"
         />
         <meta name="twitter:image:alt" content="Cesar & Veronica" />
         <meta name="twitter:site" content="@agencia.belmont" />
