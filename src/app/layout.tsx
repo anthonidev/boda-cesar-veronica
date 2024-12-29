@@ -48,7 +48,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://boda-cesar-veronica.vercel.app/imgs/hero2.webp"
+          content="https://boda-cesar-veronica.vercel.app/imgs/hero2.jpg"
         />
         <meta
           property="og:url"
@@ -63,7 +63,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://boda-cesar-veronica.vercel.app/imgs/hero2.webp"
+          content="https://boda-cesar-veronica.vercel.app/imgs/hero2.jpg"
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
