@@ -8,7 +8,8 @@ const People = () => {
       <div
         className=" py-40 lg:py-20 max-w-7xl mx-auto px-5 text-center"
         style={{
-          backgroundImage: "url('/imgs/option5.webp')",
+          backgroundImage: "url('/imgs/hero1.webp')",
+
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

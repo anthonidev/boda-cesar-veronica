@@ -6,7 +6,8 @@ const Footer = () => {
     <footer
       className="bg-primary  pt-6"
       style={{
-        backgroundImage: "url('/imgs/footer2.webp')",
+        backgroundImage: "url('/imgs/hero1.webp')",
+
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",

@@ -41,7 +41,8 @@ const Location = () => {
     <div
       className="bg-primary text-center py-16 px-4 sm:py-20  border-b-8 border-tertiary"
       style={{
-        backgroundImage: "url('/imgs/fondo2.webp')",
+        backgroundImage: "url('/imgs/hero1.webp')",
+
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
