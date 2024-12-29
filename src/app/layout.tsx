@@ -2,12 +2,38 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 
 import localFont from "next/font/local";
-import Head from "next/head";
-export const metadata: Metadata = {
-  title: "Cesar & Veronica - Boda",
-  description:
-    "Te invitamos a nuestra boda el 18 de enero de 2025 a las 4:30 pm en la Casa Pretelli - Lurín, te esperamos.",
-};
+import { Thumbnail } from "@/lib/resources";
+
+const baseUrl = "https://boda-cesar-veronica.vercel.app";
+export async function generateMetadata(): Promise<Metadata> {
+  const title = "Cesar & Veronica";
+
+  const description =
+    "Te invitamos a nuestra boda el 18 de enero de 2025 a las 4:30 pm en la Casa Pretelli - Lurín, te esperamos.";
+
+  return {
+    metadataBase: new URL(baseUrl),
+    title,
+    description,
+    themeColor: "black",
+    openGraph: {
+      title,
+      description,
+      url: baseUrl,
+      images: [
+        {
+          url: Thumbnail,
+          secureUrl: Thumbnail,
+          width: 1200,
+          height: 630,
+          alt: "Cesar & Veronica",
+        },
+      ],
+      type: "website",
+      siteName: "Cesar & Veronica",
+    },
+  };
+}
 
 const Helvetica = localFont({
   src: "../fonts/HelveticaNowDisplayMedium.ttf",
@@ -40,47 +66,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <Head>
-        <meta property="og:title" content="Cesar & Veronica" />
-        <meta
-          property="og:description"
-          content="Te invitamos a nuestra boda el 18 de enero de 2025 a las 4:30 pm en la Casa Pretelli - Lurín, te esperamos."
-        />
-        <meta
-          property="image"
-          content="https://boda-cesar-veronica.vercel.app/imgs/miniatura.jpg"
-        />
-        <meta
-          property="og:image"
-          content="https://boda-cesar-veronica.vercel.app/imgs/miniatura.jpg"
-        />
-
-        <meta
-          property="og:url"
-          content="https://boda-cesar-veronica.vercel.app"
-        />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:title" content="Cesar & Veronica" />
-        <meta
-          name="twitter:description"
-          content="Te invitamos a nuestra boda el 18 de enero de 2025 a las 4:30 pm en la Casa Pretelli - Lurín, te esperamos."
-        />
-        <meta
-          name="twitter:image"
-          content="https://boda-cesar-veronica.vercel.app/imgs/miniatura.jpg"
-        />
-        <meta name="twitter:image:alt" content="Cesar & Veronica" />
-        <meta name="twitter:site" content="@agencia.belmont" />
-        <meta name="twitter:creator" content="@agencia.belmont" />
-        <meta name="twitter:domain" content="boda-cesar-veronica.vercel.app" />
-        <meta
-          name="twitter:url"
-          content="https://boda-cesar-veronica.vercel.app"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
       <body
         className={`${Helvetica.variable} ${Amarillo.variable} ${BrightLarch.variable} ${BirdsOfParadise.variable}  antialiased`}
       >
