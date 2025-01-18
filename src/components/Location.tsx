@@ -1,8 +1,9 @@
 "use client";
 import { CalendarIcon, LocationIcon } from "@/assets/Icons";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
+import FormPhoto from "./common/FormPhoto";
 
 const Location = () => {
   const [timeRemaining, setTimeRemaining] = useState({
@@ -11,9 +12,10 @@ const Location = () => {
     minutes: 0,
     seconds: 0,
   });
+  const [isEventOver, setIsEventOver] = useState(false);
 
   useEffect(() => {
-    const targetDate = new Date("2025-01-18T00:00:00").getTime();
+    const targetDate = new Date("2025-01-18T16:00:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -21,6 +23,7 @@ const Location = () => {
 
       if (difference <= 0) {
         clearInterval(interval);
+        setIsEventOver(true);
         return;
       }
 
@@ -42,7 +45,6 @@ const Location = () => {
       className="bg-primary text-center py-16 px-4 sm:py-20  border-b-8 border-tertiary"
       style={{
         backgroundImage: "url('/imgs/unique.webp')",
-
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -53,6 +55,13 @@ const Location = () => {
         <h2 className="text-4xl sm:text-5xl font-birds-of-paradise tracking-wider text-secondary mb-6">
           ¡Estás Invitado!
         </h2>
+        <Link
+          href="/galeria"
+          passHref
+          className="text-[#f6f9f4] text-sm sm:text-base bg-[#a67d5c] px-4 py-2 rounded-md inline-block mt-3 hover:bg-tertiary transition-colors"
+        >
+          Ver Galería
+        </Link>
       </Fade>
       <Fade direction="up" delay={200} triggerOnce>
         <p className="max-w-3xl mx-auto text-lg sm:text-xl italic mt-2 font-helvetica px-5 text-gris">
@@ -61,33 +70,35 @@ const Location = () => {
         </p>
       </Fade>
 
-      {/* Cuenta regresiva */}
-      <div className="max-w-4xl mx-auto mt-10">
-        <Fade direction="up" triggerOnce>
-          <h3 className="text-3xl font-birds-of-paradise tracking-wider text-tertiary mb-4">
-            Cuenta regresiva
-          </h3>
-        </Fade>
-
-        <div className="grid grid-cols-4 sm:grid-cols-4 gap-4">
-          <Fade direction="up" delay={200} cascade damping={0.1} triggerOnce>
-            {["Días", "Horas", "Min", "Seg"].map((label, index) => (
-              <div
-                key={label}
-                className="flex flex-col items-center justify-center border border-tertiary rounded-lg p-4 bg-white/80 shadow-md"
-              >
-                <p className="text-3xl sm:text-4xl font-bold text-tertiary">
-                  {Object.values(timeRemaining)[index]}
-                </p>
-                <span className="text-sm sm:text-base text-tertiary">
-                  {label}
-                </span>
-              </div>
-            ))}
+      {/* Si el evento no ha llegado a 0, se muestra la cuenta regresiva */}
+      {!isEventOver && (
+        <div className="max-w-4xl mx-auto my-10">
+          <Fade direction="up" triggerOnce>
+            <h3 className="text-3xl font-birds-of-paradise tracking-wider text-tertiary mb-4">
+              Cuenta regresiva
+            </h3>
           </Fade>
-        </div>
-      </div>
 
+          <div className="grid grid-cols-4 sm:grid-cols-4 gap-4">
+            <Fade direction="up" delay={200} cascade damping={0.1} triggerOnce>
+              {["Días", "Horas", "Min", "Seg"].map((label, index) => (
+                <div
+                  key={label}
+                  className="flex flex-col items-center justify-center border border-tertiary rounded-lg p-4 bg-white/80 shadow-md"
+                >
+                  <p className="text-3xl sm:text-4xl font-bold text-tertiary">
+                    {Object.values(timeRemaining)[index]}
+                  </p>
+                  <span className="text-sm sm:text-base text-tertiary">
+                    {label}
+                  </span>
+                </div>
+              ))}
+            </Fade>
+          </div>
+        </div>
+      )}
+      <FormPhoto />
       {/* Información del evento */}
       <div className="max-w-4xl mx-auto mt-16">
         <Fade direction="left" delay={200}>
