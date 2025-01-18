@@ -16,7 +16,7 @@ export interface Gallery extends GalleryForm {
 }
 
 // Constantes para la validación
-const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
+const MAX_FILE_SIZE = 100 * 1024 * 1024; // 5MB
 
 // Esquema de validación
 export const galleryFormSchema = yup.object({
