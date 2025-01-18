@@ -2,7 +2,7 @@ import GalleryList from "@/components/gallery/GalleryList";
 import { Gallery } from "@/lib/interface/gallery";
 import { getGalleryService } from "@/server/action/gallery";
 import Link from "next/link";
-
+export const dynamic = "force-dynamic";
 export default async function Page() {
   const data = (await getGalleryService()) as Gallery[];
 
